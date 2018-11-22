@@ -18,7 +18,12 @@ The Mac terminal runs the .bash_profile everytime so the entire file difference 
 1. Clone that repo
 2. Go into the repo directory adn double click the desired theme. It will open a new Terminal window with that color scheme.
 3. Open Terminal > Preferences > Profiles: Set the theme as the default by clicking the `Default` button at the bottom
-4. Quit and relaunch a new bash terminal
+4. Update your ~/.bash_profile
+
+```bash
+# Format output of bash
+export PS1='\[\e[1;33m\]\u:\[\e[31m\]\W\[\033[32m\]$(__git_ps1) \[\e[37m\]$ \[\e[0m\]'
+```
 
 ## Auto Complete
 
