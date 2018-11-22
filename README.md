@@ -8,5 +8,3 @@
 
 - [atom.io](atom/atom.md)
 - [visual code](vsc/vsc.md)
-
-## Bash Love
