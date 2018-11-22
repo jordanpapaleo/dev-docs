@@ -1,8 +1,6 @@
 # Setup your bash terminal
 
-## .bash_profile v .bashrc
-
-**~/.bash_profile**
+## .bash_profile
 
 - The personal initialization file, executed for login shells
 - This script executes when you login
@@ -34,7 +32,7 @@ source ~/.git-completion.bash
 
 ## Git Features
 
-- Copy this file to your root: `curl https://raw.githubusercontent.com/git/git/master/contrib/completion/git-prompt.sh -o ~/.git-prompt.sh`
+- Run this at your user root: `curl https://raw.githubusercontent.com/git/git/master/contrib/completion/git-prompt.sh -o ~/.git-prompt.sh`
 - Add to ~/.bash_profile:
 
 ## Bash Aliases
