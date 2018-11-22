@@ -35,6 +35,11 @@ source ~/.git-completion.bash
 - Run this at your user root: `curl https://raw.githubusercontent.com/git/git/master/contrib/completion/git-prompt.sh -o ~/.git-prompt.sh`
 - Add to ~/.bash_profile:
 
+```bash
+# Load git bash prompt script
+source ~/.git-prompt.sh
+```
+
 ## Bash Aliases
 
 
