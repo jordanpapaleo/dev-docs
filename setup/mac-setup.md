@@ -1,4 +1,4 @@
-# Dev Laptop Setup
+# Mac Setup
 
 1. [Setup bash](bash.md)
 1. [Setup Homebrew](homebrew.md)
