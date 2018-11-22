@@ -6,7 +6,7 @@ This is totally optional:
 2. Paste the code block from below into it and save
 3. Run it `sh vsc-installs.sh`
 
-```bash`
+```bash
 #!/bin/bash
 code --install-extension azemoh.one-monokai;
 code --install-extension benjaminBlonde.monokai-alt;
