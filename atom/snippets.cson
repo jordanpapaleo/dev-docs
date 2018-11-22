@@ -1,0 +1,400 @@
+# Your snippets
+
+'*':
+  'Lorem Ipsum':
+    'prefix': 'lorem'
+    'body': 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec ultricies nisl id mattis blandit. Nullam laoreet semper turpis, eget ultrices sapien laoreet nec. Sed auctor convallis turpis vel cursus. Sed semper rhoncus dui id lobortis. Cras dictum vulputate sapien, a volutpat velit condimentum quis.'
+'*.js':
+    'Aframe: Register Component':
+      'prefix': 'arc'
+      'body': """
+      AFRAME.registerComponent('$1', {
+        schema: {},
+        init () {
+          const {data, el} = this
+        },
+        update () {
+          const {data, el} = this
+        },
+        remove () {
+
+        }
+      })
+      """
+    'Promise':
+      'prefix': 'pro'
+      'body': """
+      new Promise((resolve, reject) => {
+        $1
+      })
+      """
+    'Iffe':
+      'prefix': 'iffe'
+      'body': """
+      (function () {
+        $1
+      })()
+      """
+    'Arrow Iffe':
+      'prefix': 'affe'
+      'body': """
+      (() => {
+        $1
+      })()
+      """
+    'Then':
+      'prefix': 'then'
+      'body': """
+      then(
+        (data) => {
+
+        },
+        (err) => {
+          console.log(err)
+        }
+      )
+      """
+    'Arrow Function':
+      'prefix': 'af'
+      'body': """
+      ($1) => {
+
+      }
+      """
+    'console.log':
+        'prefix': 'log'
+        'body': 'console.log($1)'
+    'console.log stringify':
+        'prefix': 'jlog'
+        'body': 'console.log(JSON.stringify($1, null, 2))'
+    'console.warn':
+        'prefix': 'warn'
+        'body': 'console.warn($1)'
+    'console.warn stringify':
+        'prefix': 'jwarn'
+        'body': 'console.warn(JSON.stringify($1, null, 2))'
+    'console.info':
+        'prefix': 'info'
+        'body': 'console.info($1)'
+    'console.info stringify':
+        'prefix': 'jinfo'
+        'body': 'console.info(JSON.stringify($1, null, 2))'
+    'console.error':
+        'prefix': 'error'
+        'body': 'console.error($1)'
+    'console.info stringify':
+        'prefix': 'jerr'
+        'body': 'console.error(JSON.stringify($1, null, 2))'
+    'if':
+        'prefix': 'if'
+        'body': """
+        if ($1) {
+            $2
+        }
+
+        """
+    'for':
+        'prefix': 'for'
+        'body': """
+        for (var i = 0, j = $1.length; i < j; i++) {
+
+        }
+
+        """
+    'for of':
+        'prefix': 'forof'
+        'body': """
+        for ($1 of $2) {
+
+        }
+
+        """
+    'for in':
+        'prefix': 'forin'
+        'body': """
+        for (var $1 in $2) {
+          if ($2.hasOwnProperty($1)) {
+
+          }
+        }
+
+        """
+    'do while':
+        'prefix': 'do'
+        'body': """
+        do {
+
+        } while ($1)
+
+        """
+    'react component':
+        'prefix': 'rcp'
+        'body': """
+        import React, {Component} from 'react'
+        import PropTypes from 'prop-types'
+
+        export default class $1 extends Component {
+          static propTypes = {}
+
+          state = {}
+
+          render () {
+            return (
+              <div>$1</div>
+            )
+          }
+        }
+
+        """
+    'react stateless component':
+        'prefix': 'rsc'
+        'body': """
+        import React, {Component} from 'react'
+        import PropTypes from 'prop-types'
+
+        const $1 = () => {
+          return (
+            <div>$1</div>
+          )
+        }
+
+        $1.propTypes = {}
+
+        export default $1
+
+        """
+    'react decorated container':
+        'prefix': 'rct'
+        'body': """
+        import React, {Component} from 'react'
+        import PropTypes from 'prop-types'
+        import {connect} from 'react-redux'
+        import {bindActionCreators} from 'redux'
+
+        const mapStateToProps = state => ({})
+        const mapDispatchToProps = dispatch => (bindActionCreators({}, dispatch))
+
+        @connect(mapStateToProps, mapDispatchToProps)
+        export default class $1 extends Component {
+          static propTypes = {}
+
+          state = {}
+
+          render () {
+            return (
+              <div>$1</div>
+            )
+          }
+        }
+
+        """
+    'react native component':
+        'prefix': 'rncp'
+        'body': """
+        import React, {Component} from 'react'
+        import {StyleSheet, Text, View} from 'react-native'
+        import PropTypes from 'prop-types'
+
+        export default class $1 extends Component {
+          static propTypes = {}
+
+          state = {}
+
+          render () {
+            return (
+              <View>
+                <Text>$1</Text>
+              </View>
+            )
+          }
+        }
+
+        """
+    'react native stateless component':
+        'prefix': 'rnsc'
+        'body': """
+        import React, {Component} from 'react'
+        import {StyleSheet, Text, View} from 'react-native'
+        import PropTypes from 'prop-types'
+
+        const $1 = () => {
+          return (
+            <View style={styles.container}>
+              <Text>$1</Text>
+            </View>
+          )
+        }
+
+        $1.propTypes = {}
+
+        const styles = StyleSheet.create({
+          container: {}
+        })
+
+        export default $1
+
+        """
+    'react native decorated container':
+        'prefix': 'rnct'
+        'body': """
+        import React, {Component} from 'react'
+        import {StyleSheet, Text, View} from 'react-native'
+        import PropTypes from 'prop-types'
+        import {connect} from 'react-redux'
+        import {bindActionCreators} from 'redux'
+
+        const mapStateToProps = state => ({})
+        const mapDispatchToProps = dispatch => (bindActionCreators({}, dispatch))
+
+        @connect(mapStateToProps, mapDispatchToProps)
+        export default class $1 extends Component {
+          static propTypes = {}
+
+          state = {}
+
+          render () {
+            return (
+              <View style={styles.container}>
+                <Text>$1</Text>
+              </View>
+            )
+          }
+        }
+
+        const styles = StyleSheet.create({
+          container: {}
+        })
+
+        """
+    'react componentWillMount':
+        'prefix': 'cwm'
+        'body': """
+        componentWillMount () {
+          $1
+        }
+
+        """
+    'react componentDidMount':
+        'prefix': 'cdm'
+        'body': """
+        componentDidMount () {
+          $1
+        }
+
+        """
+    'react componentWillReceiveProps':
+        'prefix': 'cwrp'
+        'body': """
+        componentWillReceiveProps (nextProps) {
+          $1
+        }
+
+        """
+    'react componentWillUnmount':
+        'prefix': 'cwu'
+        'body': """
+        componentWillUnmount () {
+          $1
+        }
+
+        """
+    'react render':
+        'prefix': 'rr'
+        'body': """
+        render () {
+          return (
+            $1
+          )
+        }
+        """
+    'react mapStateToProps':
+        'prefix': 'mstp'
+        'body': """
+        const mapStateToProps = state => ({})
+        """
+    'react mapDispatchToProps':
+        'prefix': 'mdtp'
+        'body': """
+        const mapDispatchToProps = dispatch => (bindActionCreators({}, dispatch))
+        """
+    'redux reducer':
+        'prefix': 'redr'
+        'body': """
+        import cloneDeep from 'lodash/cloneDeep'
+
+        const initialState = {}
+
+        export default function $1 (state = initialState, action) {
+          switch (action.type) {
+            default:
+              return state
+          }
+        }
+
+        """
+    'describe':
+        'prefix': 'des'
+        'body': """
+        describe('$1', () => {
+          $2
+        })
+
+        """
+    'it':
+        'prefix': 'it'
+        'body': """
+        it('should $1', () => {
+          $2
+        })
+        """
+    'expect':
+        'prefix': 'exp'
+        'body': """
+        expect(
+          $2
+        )
+        """
+    'ngController':
+        'prefix': 'ngcon'
+        'body': """
+        angular
+            .module('ClearCollateral')
+            .controller('$1', $1)
+
+        $1.$inject = []
+
+        function $1() {
+
+        }
+        """
+    'ngDirective':
+        'prefix': 'ngdir'
+        'body': """
+          angular
+              .module('ClearCollateral')
+              .directive('$1', $1);
+
+          function $1() {
+              var directive = {
+                  restrict: 'EA',
+                  templateUrl: '',
+                  scope: {},
+                  link: linkFunction,
+                  controller: $1Controller,
+                  controllerAs: 'vm',
+                  bindToController: true
+              };
+
+              return directive;
+          }
+
+          function linkFunction(scope, el, attr, crtl) {
+
+          }
+
+          $1Controller.$inject = ['$scope'];
+
+          function $1Controller($scope) {
+              var vm = this;
+          }
+        """

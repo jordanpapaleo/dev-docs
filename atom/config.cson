@@ -1,0 +1,27 @@
+"*":
+  autosave:
+    enabled: true
+  core:
+    audioBeep: false
+    closeDeletedFileTabs: true
+    disabledPackages: [
+      "minimap"
+    ]
+    telemetryConsent: "limited"
+  editor:
+    invisibles:
+      cr: false
+      eol: false
+    scrollPastEnd: true
+    showIndentGuide: true
+    showInvisibles: true
+  "tree-view":
+    autoReveal: false
+    hideIgnoredNames: true
+    hideVcsIgnoredFiles: false
+    ignoredNames: [
+      ".DS_Store"
+      ".history"
+    ]
+  welcome:
+    showOnStartup: false
