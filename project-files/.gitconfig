@@ -1,0 +1,10 @@
+[core]
+	excludesfile = /Users/jpapaleo/.gitignore
+[user]
+	name = Jordan Papaleo
+	email = 
+[difftool "sourcetree"]
+	cmd = opendiff \"$LOCAL\" \"$REMOTE\"
+	path = 
+[commit]
+	template = /Users/jpapaleo/.stCommitMsg
