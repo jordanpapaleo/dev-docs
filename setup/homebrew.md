@@ -15,3 +15,11 @@ xcode-select --install
 ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 brew doctor
 ```
+
+1. [Setup git bash completion](https://github.com/bobthecow/git-flow-completion/wiki/Install-Bash-git-completion)
+
+```bash
+brew install git bash-completion
+```
+
+Add `[ -f /usr/local/etc/bash_completion ] && . /usr/local/etc/bash_completion` to `~./bash_profile`
