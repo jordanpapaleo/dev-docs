@@ -1,5 +1,7 @@
 # Git Setup
 
+Get latest version of git: `https://git-scm.com/download/mac`
+
 # Global config
 
 Create a global config to associate your commits to you.
